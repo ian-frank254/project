@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>100 Seat Cinema Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .booking-card img {
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="bg-light p-4">
+  <nav class="navbar navbar-expand-lg " background-color="white">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.png" alt="Logo" width="100%" height="100px" class="d-inline-block align-text-top me-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-fluid px-0">
+    <div class="card booking-card border-0 rounded-0 shadow-lg">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="images/cinema.jpg" alt="Cinema Interior" class="img-fluid w-100 h-100">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="card-body p-5">
+            <h2 class="card-title mb-3">Private Cinema Booking</h2>
+            <p class="card-text text-muted mb-4">
+              Host your next family conference or business event in style. Our private cinema offers the perfect blend of comfort and professionalism.
+            </p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item">🎬 Up to 100 seats with plush comfort</li>
+              <li class="list-group-item">💼 Projector, screen, and surround sound</li>
+              <li class="list-group-item">🍿 Catering options available</li>
+            </ul>
+            <h4 class="text-success fw-bold mb-4">KSh 20,000</h4>
+            <a href="#booking" class="btn btn-success btn-lg rounded-pill">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

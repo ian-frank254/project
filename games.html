@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Games Section with Videos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .game-card {
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg " background-color="white">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.png" alt="Logo" width="100%" height="100px" class="d-inline-block align-text-top me-2">
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallerys.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">🎮 Watch & Play Our Games</h2>
+  <div class="row g-4">
+    
+    <!-- Bingo -->
+    <div class="col-md-4">
+      <div class="card game-card">
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nGCEpUAnkSg?si=QbM7IeojKJA18kQh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Bingo</h5>
+          <p class="card-text">Learn how to play Bingo and enjoy it with friends or solo!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chess -->
+    <div class="col-md-4">
+      <div class="card game-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/NAIQyoPcjNM" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Chess</h5>
+          <p class="card-text">Master chess strategies with this beginner-friendly guide.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkers -->
+    <div class="col-md-4">
+      <div class="card game-card">
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MOW9k_C4vFU?si=RMx0myZWrTQ0vrVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Checkers</h5>
+          <p class="card-text">Watch and learn the rules of classic Checkers in just minutes!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card game-card">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pbE6SRQ7PoA?si=esGthHR8iLR_-sDZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Jenga</h5>
+          <p class="card-text">Watch and learn the rules of Jenga in just minutes!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card game-card">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3wtnZVdTMMI?si=2gHV7tk7QLisQBdH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Foosball</h5>
+          <p class="card-text">Watch and learn how to the snake shot in foosball</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card game-card">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/MOW9k_C4vFU?si=RMx0myZWrTQ0vrVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Bowling</h5>
+          <p class="card-text">Watch and learn how to bowl like a pro</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card game-card">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8FUarlhpUqQ?si=x_JkkGZFrQUxXwNu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Darts</h5>
+          <p class="card-text">Learn how to be a marksman!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card game-card">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oVo6cyF05N4?si=oGlbvp7nYES5MIWy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Ajua</h5>
+          <p class="card-text">Ajua is a popular game among our seniors</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card game-card">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NuIvfYSNSrk?si=ewA3X5C5rqmfc9fJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Global Draught</h5>
+          <p class="card-text">watch world championship draught game</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
