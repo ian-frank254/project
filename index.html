@@ -73,6 +73,19 @@
       height: 100%;
       object-fit: cover;
     }
+    .event-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+  }
+
+  .event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  }
+
+  .card-title {
+    font-weight: 600;
+  }
 
   </style>
 </head>
@@ -152,26 +165,56 @@
 
  <!-- Our Services Section -->
  <section class="container my-5">
-  <h2 class="mb-4 middle">Operating Hours</h2>
-  <div class="row">
-    <div class="col-md-6 mb-3">
-      <div class="d-flex align-items-start">
-        <i class="bi bi-clock fs-3 text-primary me-3"></i>
-        <div>
-          <h5 class="mb-1">Weekdays</h5>
-          <p class="mb-0">Monday – Friday: 8:30 AM – 6:30 PM</p>
+  <h2 class="text-center mb-4 text-primary">
+    <i class="bi bi-clock-history me-2"></i>Operating Hours
+  </h2>
+  <div class="row justify-content-center">
+    
+    <!-- Weekdays Card -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card text-center h-100 shadow-sm border-0" style="background: #e3f2fd;">
+        <div class="card-body">
+          <h5 class="card-title text-dark">
+            <i class="bi bi-calendar-week me-2 text-primary"></i>Weekdays
+          </h5>
+          <p class="card-text text-muted">Monday – Friday</p>
+          <p class="card-text fs-5 fw-bold">
+            <i class="bi bi-clock-fill text-primary me-2"></i>9:00 AM – 6:00 PM
+          </p>
         </div>
       </div>
     </div>
-    <div class="col-md-6 mb-3">
-      <div class="d-flex align-items-start">
-        <i class="bi bi-clock fs-3 text-primary me-3"></i>
-        <div>
-          <h5 class="mb-1">Weekend</h5>
-          <p class="mb-0">Saturday – Sunday: 4:00 PM – 7:00 PM</p>
+    
+    <!-- Saturday Card -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card text-center h-100 shadow-sm border-0" style="background: #fff3cd;">
+        <div class="card-body">
+          <h5 class="card-title text-dark">
+            <i class="bi bi-calendar-day me-2 text-warning"></i>Saturday
+          </h5>
+          <p class="card-text text-muted">Open</p>
+          <p class="card-text fs-5 fw-bold">
+            <i class="bi bi-clock-fill text-warning me-2"></i>4:00 PM – 7:00 PM
+          </p>
         </div>
       </div>
     </div>
+    
+    <!-- Sunday Card (Now Open) -->
+    <div class="col-md-4 col-sm-12 mb-3">
+      <div class="card text-center h-100 shadow-sm border-0" style="background: #d1e7dd;">
+        <div class="card-body">
+          <h5 class="card-title text-dark">
+            <i class="bi bi-calendar-check me-2 text-success"></i>Sunday
+          </h5>
+          <p class="card-text text-muted">Open</p>
+          <p class="card-text fs-5 fw-bold">
+            <i class="bi bi-clock-fill text-success me-2"></i>10:00 AM – 7:00 PM
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -198,6 +241,30 @@
         <h4>Happiness</h4>
         <p>Creating a joyful and positive environment where seniors can thrive.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" style="background-color: #121212; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+      
+      <!-- Gameplay Video -->
+      <div class="col-lg-6 order-lg-2">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/q1GQ0_x8Eqo?si=2hZJmAachCzkFDtz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+      </div>
+
+      <!-- Text Content -->
+      <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+        <h2 style="color: #00adee;">PlayStation 5 - Epic Adventures Await!</h2>
+        <p class="lead">Dive into thrilling PS5 games designed for  both kids and adults —full of color, adventure, and excitement!</p>
+        <p style="font-size: 1.5rem;"><strong>Only 1300 ksh</strong></p>
+        <a href="#" class="btn btn-lg" style="background-color: #00adee; color: white; border: none;">Join Us</a>
+      </div>
+      
     </div>
   </div>
 </section>
@@ -278,7 +345,71 @@
       </div>
     </div>
   </section>
-
+  <section class="py-5 bg-light text-dark">
+    <div class="container">
+      <h2 class="text-center mb-5">🎉 Weekly Themed Events</h2>
+      <div class="row g-4">
+        
+        <!-- Movie Night -->
+        <div class="col-md-4">
+          <div class="event-card card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column text-center">
+              <div class="mb-3 text-primary fs-1">
+                <i class="bi bi-film"></i>
+              </div>
+              <h4 class="card-title">🎬 Movie Magic Night</h4>
+              <p class="card-text">
+                <strong>Theme:</strong> Retro Rewind<br>
+                Classic 80s & 90s flicks, neon vibes, and popcorn!
+              </p>
+              <div class="mt-auto text-muted">
+                <strong>Saturday @ 6-10 PM</strong><br>Cinema Hall
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Book Reading -->
+        <div class="col-md-4">
+          <div class="event-card card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column text-center">
+              <div class="mb-3 text-success fs-1">
+                <i class="bi bi-book"></i>
+              </div>
+              <h4 class="card-title">📚 Fireside Book Readings</h4>
+              <p class="card-text">
+                <strong>Theme:</strong> Whispers & Wonders<br>
+                Cozy ambiance, local authors, and magical tales.
+              </p>
+              <div class="mt-auto text-muted">
+                <strong>Sundays @ 6-10 PM</strong><br>Reading Room
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Gaming Night -->
+        <div class="col-md-4">
+          <div class="event-card card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column text-center">
+              <div class="mb-3 text-danger fs-1">
+                <i class="bi bi-controller"></i>
+              </div>
+              <h4 class="card-title">🎮 Arcade Gaming Night</h4>
+              <p class="card-text">
+                <strong>Theme:</strong> Arcade After Dark<br>
+                Video game battles, tabletop fun, and pixel-powered action.
+              </p>
+              <div class="mt-auto text-muted">
+                <strong>Friday @ 6-9 PM</strong><br>Game Hub Lounge
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
 <!-- Video Gallery Section -->
 <section class="py-5">
   <div class="container">
@@ -322,11 +453,14 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card shadow-sm h-100">
           <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="YouTube video" allowfullscreen></iframe>
+            <video controls>
+              <source src="videos/library.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Movies & Events</h5>
-            <p class="card-text">Take a peek at our vibrant cinema hall!</p>
+            <h5 class="card-title">library</h5>
+            <p class="card-text">Take a peek at our vibrant Library!</p>
           </div>
         </div>
       </div>
